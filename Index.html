@@ -9,6 +9,7 @@
     <h1>🌮Welcome to<mark>Taco Truck</mark>🌮</h1>
     <p>A project designed by <b>Aayush</b> to learn HTML</p>
     <p>Best Taco in Town</p>
+    <nav>
     <ul>
         <a href="#AboutTR"><li>About TR</li></a>
         <a href="#OurMenu"><li>Our Menu</li></a>
@@ -16,22 +17,25 @@
         <a href="#FeedbackForm"><li>Feedback Form</li></a>
         <a href="#Contact"><li>Contact</li></a>
     </ul>
+    </nav>
 
     <img src="https://media.istockphoto.com/id/690303838/vector/food-truck-taco-mexican-fast-delivery-service-vector-icon.jpg?s=1024x1024&w=is&k=20&c=H2uuVPm3XuNBk51-z1aAMtIXyxOiWgtTUYCrjSiv2X0=" 
     width="1200"
     height="400"
     alt=""/>
-    <caption>Taco Food Truck</caption>
+    <figcaption>Taco Food Truck</figcaption>
     <hr>
 
+    <article>
     <h2 id="AboutTR">About TR</h2>
     <p>A taco is a traditional Mexican dish made of a corn or wheat 
         tortilla filled with various ingredients, then folded and eaten by hand. 
         Common fillings include meats like beef, pork, and chicken, 
         as well as beans, vegetables, and seafood, and it can be topped with salsas, 
         guacamole, sour cream, lettuce, cilantro, or cheese. 
-        Tacos are a type of Mexican street food (antojitos) that has become popular worldwide.
+        <strong>Tacos are a type of Mexican street food (antojitos) that has become popular worldwide.</strong>
     </p>
+    </article>
     <hr>
 
     <h1 id="OurMenu">Our Menu</h1>
@@ -201,7 +205,8 @@
     <a href="#top" class="back-to-top">Back to Top</a>
     <hr>
     <aside>
-        <h1>Taco Trivia</h1>
+        <details>
+        <summary><h1>Taco Trivia</h1></summary>
         <p>To start off with, did you know that the word ‘taco’ actually originates from the spoken word of the indigenous people in Mexico, 
         the Aztec’s Nahuatl language, referring to a rolled or folded tortilla.</p>
         
@@ -219,6 +224,7 @@
 
         <p>Did you know that the word “taco” in Spanish translates to “light meal”. Other translations for the word include “wedge”, or “plug”.
         That might explain why they’re shaped the way they are.</p>
+        </details>
     </aside>
     <hr>
     <h1 id="Extras"><b>Media Fun</b></h1>
@@ -235,9 +241,8 @@
     <h1 id="FeedbackForm"><b>Give Us Your Feedback</b></h1>
     <hr>
     <form action="">
-        <div>
-            <label for="message-title">Your Info</label>
-        </div>
+        <fieldset>
+        <legend>YourInfo</legend>
      Name: <input type="text" minlength="5" maxlength="12" >   
      <br/><br />
      <label for="">Email:</label>
@@ -250,25 +255,27 @@
         <option value="Soft">Soft</option>
         <option value="Chewey">Chewey</option>        
      </select>
-     <hr>
-     <label for="message-title">Your Message</label>
-     <br>
+     </fieldset>
+
+     <fieldset>
+     <legend>Your Message</legend>
      <label for="message-content">Message:</label>
      <br>
      <textarea id="message-content" name="message-content" rows="5" cols="50"></textarea>
      <br>
+     </fieldset>
      <input type="submit" />
     </form>
     <hr>
+
+    <footer>
     <h2 id="Contact">Contact Us</h2>
     <address>
     Taco Truck<br>
     Sector 4, Shanti Nagar<br>
     Email:<a href="mailto:abc123@gmail.com">abc123@gmail.com</a>
     </address>
+    </footer>
 </body>
 
 </html>
-
-
-
